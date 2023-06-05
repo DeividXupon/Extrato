@@ -37,7 +37,7 @@ const Cabecalho = () => {
         <ButtonCabecalho  href="https://google.com">
           Ajuda
         </ButtonCabecalho>
-        <ButtonCabecalho primary="gren" href="https://google.com">
+        <ButtonCabecalho primary href="https://google.com">
           Sair
         </ButtonCabecalho>
       </div>
