@@ -8,12 +8,16 @@ import { fundoClaro } from "../UI/variaveis"
 const StyleContainer = styled.div`
   background-color: ${ fundoClaro };
   min-height: 90vh;
-  padding: 0px 15vw;
+  padding: 0px 10vw;
 `
 const Conteudo = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 const Container = () => {
@@ -21,7 +25,9 @@ const Container = () => {
     <StyleContainer>
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
-        <Conta />
+        <Conta>Conta 1</Conta>
+        <Conta>Conta 2</Conta>
+        <Conta>Conta 3</Conta>
       </Conteudo>
     </StyleContainer>
   );
