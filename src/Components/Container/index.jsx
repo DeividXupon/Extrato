@@ -4,6 +4,7 @@ import Titulo from "../Titulo";
 import Conta from "../Conta";
 import styled from "styled-components";
 import { fundoClaro } from "../UI/variaveis"
+import Extrato from "../Extrato";
 
 const StyleContainer = styled.div`
   background-color: ${ fundoClaro };
@@ -26,8 +27,7 @@ const Container = () => {
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta>Conta 1</Conta>
-        <Conta>Conta 2</Conta>
-        <Conta>Conta 3</Conta>
+        <Extrato></Extrato>
       </Conteudo>
     </StyleContainer>
   );
