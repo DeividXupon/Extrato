@@ -4,11 +4,16 @@ export const Icone = Styled.img`
   height: 30px;
   width: 30px;
 `
+
+export const IconeTema = Styled(Icone)`
+  filter: ${ ({ theme }) => theme.fliter};
+`
+
 export const Box = Styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: ${ ({theme}) => theme.inside};
   border-radius: 5px;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 15px;
@@ -41,4 +46,12 @@ export const Saldo = Styled.div`
 export const Detalhe = Styled.span`
   color: #41d3be;
   font-size: 24px;
+`
+export const BtnTema = Styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 `
